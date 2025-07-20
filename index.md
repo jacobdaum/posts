@@ -3,9 +3,8 @@ layout: default
 title: Posts
 ---
 
-<h1>Posts</h1>
+# Posts
 
-{% raw %}
 <ul>
 {% for file in site.static_files %}
   {% if file.path contains 'posts' and file.extname == '.md' %}
@@ -13,4 +12,3 @@ title: Posts
   {% endif %}
 {% endfor %}
 </ul>
-{% endraw %}
