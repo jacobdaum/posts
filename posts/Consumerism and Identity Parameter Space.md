@@ -1,3 +1,7 @@
+---
+layout: default
+title: Consumerism and Identity Parameter Space
+---
 #misc 
 Corporate monopoly discretizes personality/character - instead of having a smooth distribution of products to choose between, you choose from a few discrete options provided by monopolies - there is no pair of boots made by a leathersmith from a village you passed through, shirt knit by a family friend - just homogeneous products with no spatial, cultural or personal roots, except in the most abstract, disconnected sense. 
 

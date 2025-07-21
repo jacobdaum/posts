@@ -1,3 +1,8 @@
+---
+layout: default
+title: Business Class, Scarcity and Empathy
+---
+
 #misc 
 I flew business class for the first time yesterday. Usually, travel is a constant reminder that I am nothing beyond my role as a consumer, that I have no value beyond the few pennies that have yet to be squeezed out of me, that I am not deserving of respect or even consideration, that my presence and existence is a nuisance. I am herded like an animal, afforded as little as the airline can get away with.
 ![[Grothendieck.jpeg]]
