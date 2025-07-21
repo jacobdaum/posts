@@ -1,7 +1,3 @@
 markdown: kramdown
 theme: minima
 title: Jacob's Thoughts
-minima:
-# Only keep one nav item
-header_pages:
-- index.md
