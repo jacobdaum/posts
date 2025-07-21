@@ -1,4 +1,7 @@
-Nontriviality Of Ideas In Math
+---
+layout: default
+title: Reflections On Art
+---
 #misc 
 Levels of awareness in art:
 

@@ -1,3 +1,7 @@
+---
+layout: default
+title: Some Reflections On Unburdening Oneself
+---
 #misc 
 **Goal #1: Enjoy life and feel good**
 	**Subgoal A: Enjoy math and feel good doing math**
