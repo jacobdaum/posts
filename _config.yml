@@ -1,9 +1,5 @@
 markdown: kramdown
 theme: minima
 title: Jacob's Thoughts
-
-kramdown:
-  input: GFM
-  math_engine: mathjax
-  syntax_highlighter_opts:
-    disable: true
+# Remove or override the default navigation
+header_pages: []
