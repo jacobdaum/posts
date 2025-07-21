@@ -1,9 +1,5 @@
 markdown: kramdown
 theme: minima
 title: Jacob's Thoughts
-
-# Optional but safe to include:
-kramdown:
-  math_engine: mathjax
 # Remove or override the default navigation
 header_pages: []
