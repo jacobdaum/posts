@@ -1,3 +1,7 @@
+---
+layout: default
+title: Exit Valves
+---
 #misc 
 At times, I get caught up possessing a belief system that I believe impacts me negatively. For example, believing I am fundamentally not smart enough to do math - not big enough to play soccer - not loveable enough to be in a healthy relationship - etc. Or sometimes, it is more mundane - believing that restaurant food is better than home cooking. These belief systems are reinforced both emotionally and rationally, and I suspect the emotional reinforcement is much the stronger.
 

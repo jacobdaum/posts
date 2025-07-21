@@ -1,3 +1,7 @@
+---
+layout: default
+title: Development of Informal Information in Notes
+---
 As initiated in [[Informal Information In Math]], I want to give myself avenues to include and demarcate informal information, such as mental imagery, sketch-type ideas and intuition, etc. I also want to include and demarcate feelings about the mathematics and personal context. Here is an update on the techniques:
 
 1. Spiritual callouts: 

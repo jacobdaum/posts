@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Gently Coming Into Being
+title: Desire To See
 ---
-
 #misc
 Kant famously claimed that, if you had been born and raised wearing a pair of red-tinted goggles, you would believe the sky to be red. This thought experiment has bothered me more or less for my whole life - any interaction I have with, or perception I have of underlying reality, assuming there is such a thing, only makes sense modulo my specific "processing mechanism." I crave to interface with underlying reality more directly, without the barrier of my own subjective lens, to know what it is like independently of my own perspective. 
 
