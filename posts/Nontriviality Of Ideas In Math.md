@@ -1,3 +1,7 @@
+---
+layout: default
+title: Nontriviality Of Ideas In Math
+---
 #misc 
 Start with structure $A$ defined by information inf$(A)$. If a proposition $P$ can be proved about $A$ directly from inf$(A)$, i.e without building new structures $A_i$ and proving propositions iteratively about your new structures and $A$, it is trivial. 
 

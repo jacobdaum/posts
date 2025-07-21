@@ -1,3 +1,7 @@
+---
+layout: default
+title: Intuition
+---
 #misc 
 Intuition does not always mean you are able to navigate a game that does not have structural principles. Sometimes it means that the structural principles are not written down, but you are still able to detect some of them. It is nice to then “hardwire” the rules, so that your behaviour and thought instinctively follows the rules - at this point you may be said to have intuition.
 

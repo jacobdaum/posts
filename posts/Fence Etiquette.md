@@ -2,6 +2,5 @@
 layout: default
 title: Fence Etiquette
 ---
-
 #misc 
 The fences on either sides of our backyard are made with wooden planks arranged in a sort of crosshatched pattern. A feature of this design is that the fences are essentially see-through, so that when our neighbours and us are in our backyards at the same time, we can see and hear each other clearly. Interestingly, we have all unspokenly agreed to pretend this is not true, to carry on about our lives as though nobody else is there, to pretend that these see-through fences are really impenetrable walls guarding our privacy. Of course, Edie is too young to understand, or maybe old enough to understand but not old enough to respect this code - when she hears our neighbours outside, including our at-times grouchy neighbour Richard, she calls out to them gleefully, asks them about their comings and goings, and offers to display her various collections over top of the fence. There is something lovely here - innocence cutting through social customs that isolate us from each other, for better or worse.

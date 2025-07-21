@@ -1,3 +1,7 @@
+---
+layout: default
+title: Informal Information In Math
+---
 #misc 
 Math is a process of reflection, thought, and exploration, and reflects the belief systems and cultures of the practitioner just as does any process of reflection, thought and exploration. It is funny that few would argue that art, or literary criticism, does not reflect its creator - yet math, through its attempts to situate itself in relation to notions of permanence and truth, has ducked away from such analyses. 
 
