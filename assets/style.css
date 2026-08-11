@@ -25,6 +25,13 @@ body {
   margin: 0;
 }
 
+body.home {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(246, 241, 231, 0.46), rgba(246, 241, 231, 0.46)),
+    url("./klee-park.jpg") center / cover no-repeat fixed;
+}
+
 ::selection {
   background: var(--selection);
 }
@@ -62,10 +69,22 @@ a:hover {
   text-decoration: none;
 }
 
-.site-mark {
-  color: var(--accent);
-  font-size: 1.6rem;
-  line-height: 1;
+.site-nav {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.home .site-header {
+  border-bottom-color: rgba(32, 37, 32, 0.24);
+}
+
+.home .site-nav {
+  margin-left: auto;
+  color: var(--ink);
 }
 
 .page-shell {
@@ -79,18 +98,32 @@ a:hover {
 }
 
 .cover {
-  margin-bottom: 5rem;
+  display: flex;
+  align-items: flex-start;
+  min-height: calc(100vh - 16rem);
 }
 
-.cover .intro {
+.cover-copy {
+  max-width: 650px;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(246, 241, 231, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+.cover-copy h1 {
+  margin-bottom: 1.5rem;
+}
+
+.cover-disclaimer {
+  max-width: 620px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.08rem;
+}
+
+.writing-page-heading {
   margin-bottom: 2.5rem;
-}
-
-.cover-art {
-  display: block;
-  width: min(100%, 560px);
-  height: auto;
-  margin-inline: auto;
+  font-size: clamp(2.35rem, 7vw, 4.8rem);
 }
 
 .post-tag {
@@ -220,6 +253,11 @@ h1 {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.68rem;
   letter-spacing: 0.04em;
+}
+
+.home .site-footer {
+  border-top-color: rgba(32, 37, 32, 0.24);
+  color: var(--ink);
 }
 
 @media (max-width: 560px) {
