@@ -78,6 +78,21 @@ a:hover {
   margin-bottom: 4rem;
 }
 
+.cover {
+  margin-bottom: 5rem;
+}
+
+.cover .intro {
+  margin-bottom: 2.5rem;
+}
+
+.cover-art {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  margin-inline: auto;
+}
+
 .post-tag {
   margin: 0 0 0.8rem;
   color: var(--accent);
