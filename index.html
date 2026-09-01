@@ -45,5 +45,25 @@
     </footer>
     
     
+    
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script>
+        (() => {
+          const isAuthReturn = window.location.hash.includes("access_token=")
+            || new URLSearchParams(window.location.search).has("code");
+          if (!isAuthReturn) return;
+
+          const client = window.supabase.createClient(
+            "https://qzywmkjrmpnumusjjyac.supabase.co",
+            "sb_publishable_t8JI4dNYVEe3YA971I6Tjw_R0kULQyk"
+          );
+          client.auth.getSession().then(({ data }) => {
+            if (data.session) {
+              window.location.replace("/posts/posts/Informal Information In Math.html");
+            }
+          });
+        })();
+      </script>
+    
   </body>
 </html>
