@@ -10,6 +10,8 @@
     <link rel="canonical" href="https://jacobdaum.github.io/posts/posts/Business Class, Scarcity and Empathy.html">
     <link rel="stylesheet" href="/posts/assets/style.css?v=20260811-5">
     
+      <link rel="stylesheet" href="/posts/assets/annotations.css?v=1">
+    
     
     <script>
       MathJax = {
@@ -33,6 +35,10 @@
           <div class="post-tools">
             <a class="back-link" href="/posts/writing/">← All writing</a>
             
+              <button class="annotation-toggle" id="annotation-toggle" type="button" aria-controls="annotation-panel" aria-expanded="false">
+                Annotations <span id="annotation-count" aria-label="approved annotations">0</span>
+              </button>
+            
           </div>
           <h1>Business Class, Scarcity and Empathy</h1>
           
@@ -52,6 +58,45 @@ Instead, travel is now a pleasant experience where there is no scarcity, I am tr
       
     </footer>
     
+    
+      <aside class="annotation-panel" id="annotation-panel" aria-label="Public annotations" aria-hidden="true">
+        <div class="annotation-panel__header">
+          <div>
+            <p class="annotation-kicker">Reader layer</p>
+            <h2>Annotations</h2>
+          </div>
+          <button class="annotation-close" id="annotation-close" type="button" aria-label="Close annotations">×</button>
+        </div>
+        <p class="annotation-intro">Notes from approved readers appear as highlights in the essay. Select a passage to leave one.</p>
+        <div id="annotation-session"></div>
+        <div id="annotation-composer" hidden>
+          <blockquote id="annotation-quote"></blockquote>
+          <label for="annotation-comment">Your note</label>
+          <textarea id="annotation-comment" rows="4" maxlength="2000"></textarea>
+          <div class="annotation-actions">
+            <button id="annotation-submit" class="annotation-primary" type="button">Publish note</button>
+            <button id="annotation-cancel" class="annotation-secondary" type="button">Cancel</button>
+          </div>
+        </div>
+        <p class="annotation-status" id="annotation-status" role="status"></p>
+        <div id="annotation-list" class="annotation-list"></div>
+        <section id="annotation-moderation" class="annotation-moderation" hidden>
+          <h3>Invite a reader</h3>
+          <div id="annotation-account-queue"></div>
+        </section>
+      </aside>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script>
+        window.JACOB_ANNOTATIONS = {
+          url: "https://qzywmkjrmpnumusjjyac.supabase.co",
+          publishableKey: "sb_publishable_t8JI4dNYVEe3YA971I6Tjw_R0kULQyk",
+          pagePath: "/posts/Business Class, Scarcity and Empathy.html",
+          pageTitle: "Business Class, Scarcity and Empathy",
+          waitForContentReady: false
+        };
+        
+      </script>
+      <script defer src="/posts/assets/annotations.js?v=1"></script>
     
   </body>
 </html>
