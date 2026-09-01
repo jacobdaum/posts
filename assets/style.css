@@ -228,11 +228,18 @@ h1 {
 
 .post .back-link {
   display: inline-block;
-  margin-bottom: 2.5rem;
   color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.72rem;
   text-decoration: none;
+}
+
+.post-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .post h1 {
