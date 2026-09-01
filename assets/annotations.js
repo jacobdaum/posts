@@ -305,7 +305,10 @@
   }
 
   async function init() {
-    if (!window.MathJax?.startup?.promise) {
+    if (config.waitForContentReady) {
+      await new Promise((resolve) => document.addEventListener("jacob:content-ready", resolve, { once: true }));
+    }
+    if (document.readyState !== "complete" && !window.MathJax?.startup?.promise) {
       await new Promise((resolve) => window.addEventListener("load", resolve, { once: true }));
     }
     if (window.MathJax?.startup?.promise) {

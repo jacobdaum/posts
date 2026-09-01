@@ -226,6 +226,20 @@ h1 {
   max-width: 680px;
 }
 
+.pdf-reader-page .site-header,
+.pdf-reader-page .site-footer,
+.pdf-reader-page .page-shell {
+  width: min(100% - 2rem, 1040px);
+}
+
+.pdf-reader-page .post {
+  max-width: none;
+}
+
+.pdf-reader-page .post h1 {
+  max-width: 900px;
+}
+
 .post .back-link {
   display: inline-block;
   color: var(--muted);
