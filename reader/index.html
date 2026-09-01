@@ -55,5 +55,30 @@
       
     </footer>
     
+      <script>
+        (() => {
+          const params = new URLSearchParams(window.location.search);
+          const requestedPdf = params.get("pdf") || "";
+          const requestedTitle = params.get("title") || "Document";
+          let pdfUrl = null;
+          try {
+            const candidate = new URL(requestedPdf, window.location.origin);
+            if (candidate.origin === window.location.origin && candidate.pathname.startsWith("/posts/assets/")) {
+              pdfUrl = candidate;
+            }
+          } catch (_error) {}
+          window.JACOB_PDF_READER = {
+            pdfUrl: pdfUrl ? pdfUrl.toString() : "",
+            title: requestedTitle,
+            pdfModule: "/posts/assets/vendor/pdf.min.mjs",
+            pdfWorker: "/posts/assets/vendor/pdf.worker.min.mjs"
+          };
+          document.querySelector("#pdf-reader-title").textContent = requestedTitle;
+          document.title = `${requestedTitle} · Jacob's Thoughts`;
+        })();
+      </script>
+      <script defer src="/posts/assets/pdf-reader.js?v=2"></script>
+    
+    
   </body>
 </html>
