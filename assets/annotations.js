@@ -190,7 +190,7 @@
           <p class="annotation-account-state">Signed in as ${escapeHtml(state.user.email)}. Choose the name that will appear beside your notes.</p>
           <label for="annotation-username">Username</label>
           <input id="annotation-username" minlength="2" maxlength="32" pattern="[A-Za-z0-9_-]+" required placeholder="reader-name">
-          <button class="annotation-primary" type="submit">Request access</button>
+          <button class="annotation-primary" type="submit">Save username</button>
         </form>`;
       return;
     }
@@ -241,8 +241,6 @@
         <p class="annotation-account-state">Only people you invite can create reader accounts.</p>
         <label for="annotation-invite-email">Friend’s email</label>
         <input id="annotation-invite-email" type="email" required placeholder="friend@example.com">
-        <label for="annotation-invite-username">Username</label>
-        <input id="annotation-invite-username" minlength="2" maxlength="32" pattern="[A-Za-z0-9_-]+" required placeholder="reader-name">
         <button class="annotation-primary" type="submit">Send invitation</button>
       </form>`;
   }
@@ -360,7 +358,7 @@
       const { error } = await db.rpc("set_my_username", { new_username: username });
       if (error) setStatus(error.message, true);
       else {
-        setStatus("Access requested. Jacob can now approve your account.");
+        setStatus("Username saved. Choose your password next.");
         await loadProfile();
       }
     }
@@ -421,9 +419,8 @@
     if (event.target.id !== "annotation-invite-form") return;
     event.preventDefault();
     const email = event.target.querySelector("#annotation-invite-email").value;
-    const username = event.target.querySelector("#annotation-invite-username").value;
     const { error } = await db.functions.invoke("invite-reader", {
-      body: { email, username, redirectTo: window.location.href.split("#")[0] },
+      body: { email, redirectTo: window.location.href.split("#")[0] },
     });
     if (error) setStatus(error.message, true);
     else {
