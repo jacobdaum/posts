@@ -45,6 +45,19 @@
     statusBox.style.color = isError ? "#8d2f24" : "";
   }
 
+  async function functionErrorMessage(error) {
+    const response = error?.context;
+    if (response && typeof response.clone === "function") {
+      try {
+        const payload = await response.clone().json();
+        if (payload?.error) return payload.error;
+      } catch (_error) {
+        // Fall back to the SDK's message below.
+      }
+    }
+    return error?.message || "The invitation could not be sent.";
+  }
+
   function openPanel() {
     panel.classList.add("is-open");
     panel.setAttribute("aria-hidden", "false");
@@ -422,7 +435,7 @@
     const { error } = await db.functions.invoke("invite-reader", {
       body: { email, redirectTo: window.location.href.split("#")[0] },
     });
-    if (error) setStatus(error.message, true);
+    if (error) setStatus(await functionErrorMessage(error), true);
     else {
       event.target.reset();
       setStatus(`Invitation sent to ${email}.`);
